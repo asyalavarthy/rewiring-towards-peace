@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rewiring Toward Peace — A Complete Personal Practice Guide</title>
+<title>No Going Back to Yesterday — A Personal Practice Guide</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap');
 :root {
@@ -21,7 +21,8 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
 .cover-eyebrow{font-size:11px;letter-spacing:6px;text-transform:uppercase;color:var(--gold);margin-bottom:48px;font-weight:400;opacity:0.8;}
 .cover-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,8vw,84px);font-weight:300;color:var(--gold-light);line-height:1.1;margin-bottom:24px;letter-spacing:-1px;}
 .cover-title em{font-style:italic;color:var(--gold);}
-.cover-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.5vw,22px);font-weight:300;font-style:italic;color:var(--soft);margin-bottom:64px;line-height:1.6;}
+.cover-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,2.5vw,22px);font-weight:300;font-style:italic;color:var(--soft);margin-bottom:16px;line-height:1.6;}
+.cover-tagline-desc{font-family:'Cormorant Garamond',serif;font-size:clamp(13px,1.8vw,17px);font-weight:300;color:var(--soft);opacity:0.7;margin-bottom:64px;line-height:1.6;letter-spacing:1px;}
 .cover-rule{width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:0 auto 48px;opacity:0.5;}
 .cover-parts{display:flex;gap:40px;flex-wrap:wrap;justify-content:center;margin-bottom:64px;}
 .cover-part{text-align:center;}
@@ -179,6 +180,37 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   .intro-quotes{grid-template-columns:1fr;}
   .cover-parts{gap:20px;}
 }
+ 
+.habit-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-light);
+  transition: border-color 0.2s, color 0.2s;
+}
+.habit-link:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+.when-habit-link {
+  border-bottom: none;
+}
+.when-habit-link:hover .when-habit-name {
+  color: var(--gold);
+}
+.ref-table a.habit-link {
+  border-bottom: 1px dashed var(--gold-light);
+}
+.ref-table a.habit-link:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+[id^="habit-"] {
+  scroll-margin-top: 40px;
+}
 </style>
 </head>
 <body>
@@ -187,8 +219,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="cover-glow cover-glow-1"></div>
   <div class="cover-glow cover-glow-2"></div>
   <div class="cover-eyebrow">A Personal Practice Guide</div>
-  <h1 class="cover-title">Rewiring Toward<br><em>Peace</em></h1>
-  <p class="cover-subtitle">25 Habits for a Growth-Oriented Mindset<br>rooted in Neuroplasticity, Manifestation, Spirituality & Wonder</p>
+  <h1 class="cover-title">No Going Back<br><em>to Yesterday</em></h1>
+  <p class=cover-subtitle><em>I was a different person then.</em></p>
+  <p class=cover-tagline-desc>25 Habits for a Growth-Oriented Mindset</p>
   <div class="cover-rule"></div>
   <div class="cover-parts">
     <div class="cover-part"><span class="cover-part-emoji">🧠</span><div class="cover-part-name">Part One<br>Rewiring the<br>Everyday</div></div>
@@ -198,9 +231,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   </div>
   <div class="cover-tagline">Playful · Happy · Free</div>
 </div>
-
+ 
 <div class="content">
-
+ 
 <!-- INTRO -->
 <div class="intro">
   <div class="intro-label">Before You Begin</div>
@@ -211,7 +244,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   </div>
   <p class="intro-note">Start with one habit. Let it work. Add another when it's ready. The brain doesn't need perfection — it needs repetition, patience, and the quiet decision to keep choosing better. Pick what feels most accessible, not what feels most correct. One is always enough.</p>
 </div>
-
+ 
 <!-- QUICK REFERENCE TABLE -->
 <div class="ref-section">
   <div class="section-eyebrow">At a Glance</div>
@@ -220,31 +253,31 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <table class="ref-table">
     <thead><tr><th>#</th><th>Habit</th><th>When</th><th>Type</th></tr></thead>
     <tbody>
-      <tr><td>01</td><td>🌙 The 3-Win Evening Review</td><td>Nightly</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>02</td><td>☀️ The One-Sentence Morning Intention</td><td>Morning</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>03</td><td>🔄 The Reset Breath</td><td>Reactive</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
-      <tr><td>04</td><td>⚓ The Reframe Anchor Phrase</td><td>Reactive</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
-      <tr><td>05</td><td>🤝 The One Real Moment</td><td>Daily</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>06</td><td>✍️ The Weekly Growth Write</td><td>Weekly</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>07</td><td>🕯️ The Dresser Top Ritual</td><td>Morning</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>08</td><td>📱 The One Question Pause</td><td>As needed</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>09</td><td>🚶 The Two-Minute Reset</td><td>As needed</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
-      <tr><td>10</td><td>📂 The Evidence File</td><td>Ongoing</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
-      <tr><td>11</td><td>✨ The Feeling First Visualization</td><td>Morning</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
-      <tr><td>12</td><td>📝 The Character Study &amp; Scripting Practice</td><td>Weekly</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
-      <tr><td>13</td><td>🎵 The Manifestation Playlist</td><td>Daily</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
-      <tr><td>14</td><td>💃 The Embodiment Trigger</td><td>Daily</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
-      <tr><td>15</td><td>🌉 The Belief Bridge</td><td>Reactive</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
-      <tr><td>16</td><td>🙏 The Why Letter</td><td>Hard days</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
-      <tr><td>17</td><td>🌿 The Portal Practice</td><td>Hard days</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
-      <tr><td>18</td><td>🧵 The Tapestry Record</td><td>Ongoing</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
-      <tr><td>19</td><td>🌸 The Two-Way Moment</td><td>Daily</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
-      <tr><td>20</td><td>🌟 The Impossible Six</td><td>Morning</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
-      <tr><td>21</td><td>🎪 The Yes Moment</td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
-      <tr><td>22</td><td>🎬 The Secret Narrator</td><td>Any moment</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
-      <tr><td>23</td><td>🫧 The Pointless Making</td><td>Occasionally</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
-      <tr><td>24</td><td>🎈 The Full Surrender</td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
-      <tr><td>25</td><td>🌸 The Fleeting Thing</td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
+      <tr><td>01</td><td><a href="#habit-01" class="habit-link">🌙 The 3-Win Evening Review</a></td><td>Nightly</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>02</td><td><a href="#habit-02" class="habit-link">☀️ The One-Sentence Morning Intention</a></td><td>Morning</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>03</td><td><a href="#habit-03" class="habit-link">🔄 The Reset Breath</a></td><td>Reactive</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
+      <tr><td>04</td><td><a href="#habit-04" class="habit-link">⚓ The Reframe Anchor Phrase</a></td><td>Reactive</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
+      <tr><td>05</td><td><a href="#habit-05" class="habit-link">🤝 The One Real Moment</a></td><td>Daily</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>06</td><td><a href="#habit-06" class="habit-link">✍️ The Weekly Growth Write</a></td><td>Weekly</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>07</td><td><a href="#habit-07" class="habit-link">🕯️ The Dresser Top Ritual</a></td><td>Morning</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>08</td><td><a href="#habit-08" class="habit-link">📱 The One Question Pause</a></td><td>As needed</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>09</td><td><a href="#habit-09" class="habit-link">🚶 The Two-Minute Reset</a></td><td>As needed</td><td><span class="badge badge-reactive">Reactive</span></td></tr>
+      <tr><td>10</td><td><a href="#habit-10" class="habit-link">📂 The Evidence File</a></td><td>Ongoing</td><td><span class="badge badge-neuro">Neuroplasticity</span></td></tr>
+      <tr><td>11</td><td><a href="#habit-11" class="habit-link">✨ The Feeling First Visualization</a></td><td>Morning</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
+      <tr><td>12</td><td><a href="#habit-12" class="habit-link">📝 The Character Study &amp; Scripting Practice</a></td><td>Weekly</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
+      <tr><td>13</td><td><a href="#habit-13" class="habit-link">🎵 The Manifestation Playlist</a></td><td>Daily</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
+      <tr><td>14</td><td><a href="#habit-14" class="habit-link">💃 The Embodiment Trigger</a></td><td>Daily</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
+      <tr><td>15</td><td><a href="#habit-15" class="habit-link">🌉 The Belief Bridge</a></td><td>Reactive</td><td><span class="badge badge-manifest">Manifestation</span></td></tr>
+      <tr><td>16</td><td><a href="#habit-16" class="habit-link">🙏 The Why Letter</a></td><td>Hard days</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
+      <tr><td>17</td><td><a href="#habit-17" class="habit-link">🌿 The Portal Practice</a></td><td>Hard days</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
+      <tr><td>18</td><td><a href="#habit-18" class="habit-link">🧵 The Tapestry Record</a></td><td>Ongoing</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
+      <tr><td>19</td><td><a href="#habit-19" class="habit-link">🌸 The Two-Way Moment</a></td><td>Daily</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
+      <tr><td>20</td><td><a href="#habit-20" class="habit-link">🌟 The Impossible Six</a></td><td>Morning</td><td><span class="badge badge-spirit">Spirituality</span></td></tr>
+      <tr><td>21</td><td><a href="#habit-21" class="habit-link">🎪 The Yes Moment</a></td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
+      <tr><td>22</td><td><a href="#habit-22" class="habit-link">🎬 The Secret Narrator</a></td><td>Any moment</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
+      <tr><td>23</td><td><a href="#habit-23" class="habit-link">🫧 The Pointless Making</a></td><td>Occasionally</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
+      <tr><td>24</td><td><a href="#habit-24" class="habit-link">🎈 The Full Surrender</a></td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
+      <tr><td>25</td><td><a href="#habit-25" class="habit-link">🌸 The Fleeting Thing</a></td><td>When it arrives</td><td><span class="badge badge-whimsy">Whimsy</span></td></tr>
     </tbody>
   </table>
 </div>
@@ -255,18 +288,18 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <h2 class="part-title neuro">Rewiring the <em>Everyday</em></h2>
   <p class="part-desc">The foundation. Daily and reactive habits rooted in neuroscience that interrupt old patterns, build new neural pathways, and make optimism your brain's default setting over time.</p>
 </div>
-
+ 
 <!-- HABIT 1 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-01">
   <div class="habit-tag">Habit 01 · Nightly</div>
   <div class="habit-header"><span class="habit-emoji">🌙</span><div><div class="habit-title">The 3-Win Evening Review</div><span class="habit-when">Every evening · pairs with your gratitude journal</span></div></div>
   <p class="habit-body">Before bed, write down — or mentally note — <strong>3 specific things that went well today</strong>, no matter how small. "I made a good cup of coffee." "I handled that email calmly." This upgrades your existing gratitude practice by adding a "what went well" lens alongside what you're thankful for.</p>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">This trains your brain's <em>reticular activating system (RAS)</em> — the filter that decides what to pay attention to. The more you deliberately scan for positives, the more your RAS tunes to notice them automatically. Whatever you rehearse in the evening gets consolidated during sleep, deepening the neural pathway overnight.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 2 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-02">
   <div class="habit-tag">Habit 02 · Morning</div>
   <div class="habit-header"><span class="habit-emoji">☀️</span><div><div class="habit-title">The One-Sentence Morning Intention</div><span class="habit-when">While still in bed or making your first drink</span></div></div>
   <p class="habit-body">Before getting up, complete this sentence — in your head or aloud: <strong>"Today I want to feel ___."</strong> One word. Calm. Curious. Playful. Present. That's it. The same word can carry through an entire week — repetition is the point.</p>
@@ -274,28 +307,29 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">This is <em>implementation intention</em> — priming your brain with a single emotional target activates the prefrontal cortex early, giving your brain a filter to run decisions through before the day's noise sets in. Like setting a GPS before you start driving.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 3 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-03">
   <div class="habit-tag">Habit 03 · Reactive</div>
   <div class="habit-header"><span class="habit-emoji">🔄</span><div><div class="habit-title">The Reset Breath</div><span class="habit-when">The moment an external trigger hits</span></div></div>
   <p class="habit-body">When you feel an external trigger land — a frustrating comment, bad news, an annoying situation — take <strong>one deliberate breath before responding</strong>. Inhale for 4 counts, exhale for 6. The extended exhale is what activates the calming response. Pairs with Habit 9 as a two-stage pattern interrupt.</p>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">The extended exhale activates your <em>parasympathetic nervous system</em>, physically braking the stress response. It creates a micro-pause that engages your prefrontal cortex before your amygdala takes over. Over time this pause becomes automatic and your baseline reactivity lowers permanently.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div><span>8/10</span></div>
 </div>
-
+ 
 <!-- HABIT 4 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-04">
   <div class="habit-tag">Habit 04 · Reactive</div>
   <div class="habit-header"><span class="habit-emoji">⚓</span><div><div class="habit-title">The Reframe Anchor Phrase</div><span class="habit-when">When the spiral begins — internal or external</span></div></div>
-  <p class="habit-body">When self-criticism, doubt, or external frustration hits, use your personal anchor phrase to interrupt the pattern and reclaim agency. Works equally whether the negativity is directed inward or outward.</p>
+  <p class="habit-body">When self-criticism, doubt, or external frustration hits, use one of your two anchor phrases to interrupt the pattern and reclaim agency. The first reclaims your peace; the second offers perspective. Use whichever fits the moment.</p>
   <div class="anchor-display">"Stop. This isn't worth my peace."</div>
+  <div class="anchor-display">"Stop. It's better than what it feels like."</div>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">A sharp directive word like "Stop" acts as a <em>pattern interrupt</em> — disrupting the spiral's momentum before it gains speed. Pre-chosen phrases create a cognitive shortcut your prefrontal cortex can activate even during emotional flooding. Repetition strengthens that shortcut over time.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div><span>7/10</span></div>
 </div>
-
+ 
 <!-- HABIT 5 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-05">
   <div class="habit-tag">Habit 05 · Daily</div>
   <div class="habit-header"><span class="habit-emoji">🤝</span><div><div class="habit-title">The One Real Moment</div><span class="habit-when">Once a day — social or solo version</span></div></div>
   <p class="habit-body"><strong>On social days:</strong> One genuinely present interaction — a real question you're curious about, listening without planning your response, a specific compliment you actually mean.</p>
@@ -303,9 +337,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Authentic micro-connections trigger <em>oxytocin and serotonin</em>, directly counteracting the cortisol drain of surface-level socializing. Your brain processes genuine connection similarly whether in person or not. Over time this rewires your social reward system to find nourishment rather than depletion.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div><span>7/10</span></div>
 </div>
-
+ 
 <!-- HABIT 6 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-06">
   <div class="habit-tag">Habit 06 · Weekly</div>
   <div class="habit-header"><span class="habit-emoji">✍️</span><div><div class="habit-title">The Weekly Growth Write</div><span class="habit-when">Once a week · rotate between six formats</span></div></div>
   <p class="habit-body">Once a week, choose whichever format fits the moment. Variation prevents autopilot — your brain stays genuinely engaged rather than producing habitual responses.</p>
@@ -320,18 +354,18 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text"><em>Expressive writing</em> helps your brain metabolize difficult emotions rather than recycling them. <em>Self-distancing</em> reduces emotional flooding and activates the prefrontal cortex. Variation keeps the exercise cognitively alive, ensuring genuine reflection over habitual response.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div><span>8/10</span></div>
 </div>
-
+ 
 <!-- HABIT 7 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-07">
   <div class="habit-tag">Habit 07 · Morning</div>
   <div class="habit-header"><span class="habit-emoji">🕯️</span><div><div class="habit-title">The Dresser Top Ritual</div><span class="habit-when">Every time you pass or engage with your anchor space</span></div></div>
   <p class="habit-body">Your dresser top — with its family photos and candle warmer — is your designated <strong>positivity anchor</strong>. Every time you engage with it intentionally, take one breath and allow one genuine moment of presence. The visual warmth of family photos activates feelings of love and belonging. The candle warmer's scent goes directly to your brain's emotional center, bypassing cognitive processing entirely.</p>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">This uses <em>classical conditioning</em> — by repeatedly pairing a physical space with an intentional positive state, your brain eventually triggers that state automatically at the sight or scent of it. The multi-sensory nature (visual + olfactory) makes this anchor particularly powerful.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 8 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-08">
   <div class="habit-tag">Habit 08 · As Needed</div>
   <div class="habit-header"><span class="habit-emoji">📱</span><div><div class="habit-title">The One Question Pause</div><span class="habit-when">When reaching for your phone</span></div></div>
   <p class="habit-body">Before picking up your phone, ask yourself one simple question:</p>
@@ -340,18 +374,18 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text"><em>Metacognitive awareness</em> — thinking about your thinking — even briefly strengthens the prefrontal cortex's ability to observe habits rather than just run them on autopilot. The observation itself is the habit.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 9 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-09">
   <div class="habit-tag">Habit 09 · As Needed</div>
   <div class="habit-header"><span class="habit-emoji">🚶</span><div><div class="habit-title">The Two-Minute Reset</div><span class="habit-when">When mentally stuck, emotionally heavy, or sluggish</span></div></div>
   <p class="habit-body">Get up and <strong>move for just two minutes</strong>. Walk to another room and back. Stretch your arms above your head. Shake out your hands. Put on one song and move however feels natural. This is not exercise. It is a biological reset button. Pairs with Habit 3 as a two-stage pattern interrupt.</p>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Physical movement interrupts the brain's <em>default mode network</em> — the system responsible for rumination — more effectively than almost any purely mental technique. Even two minutes raises <em>BDNF (Brain-Derived Neurotrophic Factor)</em> levels and shifts your neurochemical state measurably.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 10 -->
-<div class="habit-card">
+<div class="habit-card" id="habit-10">
   <div class="habit-tag">Habit 10 · Ongoing</div>
   <div class="habit-header"><span class="habit-emoji">📂</span><div><div class="habit-title">The Evidence File</div><span class="habit-when">Add whenever something qualifies · read during spirals</span></div></div>
   <p class="habit-body">Create a dedicated note — call it <strong>"Proof"</strong> or <strong>"Evidence"</strong>. A running collection of moments you felt genuinely proud, capable, or like yourself. Your first entry: <em>the piece of writing you loved</em>. Your 3-Win Evening Review feeds this file. This file feeds your anchor phrase when the spiral hits.</p>
@@ -366,9 +400,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <h2 class="part-title manifest">Calling In What<br><em>You're Becoming</em></h2>
   <p class="part-desc">Five habits that weave neuroplasticity with manifestation — using feeling, writing, sound, movement, and belief to close the gap between who you are now and who you're becoming.</p>
 </div>
-
+ 
 <!-- HABIT 11 -->
-<div class="habit-card manifest">
+<div class="habit-card manifest" id="habit-11">
   <div class="habit-tag">Habit 11 · Morning</div>
   <div class="habit-header"><span class="habit-emoji">✨</span><div><div class="habit-title">The Feeling First Visualization</div><span class="habit-when">Morning · during your slow, unhurried window</span></div></div>
   <p class="habit-body">Before getting up, recall a specific moment when you genuinely felt the way you want to feel more of — <strong>playful, happy, free, creative, at peace</strong>. Sit in the sensory details of that memory: where you were, what it felt like in your body, what made it real. Let that feeling expand and carry its echo into your day.</p>
@@ -377,9 +411,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Manifestation Layer</div><p class="science-text">You attract what you <em>are</em>, not just what you want. Feeling it first aligns your emotional frequency with what you're calling in, rather than operating from a place of lack or longing.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div><span>8/10</span></div>
 </div>
-
+ 
 <!-- HABIT 12 -->
-<div class="habit-card manifest">
+<div class="habit-card manifest" id="habit-12">
   <div class="habit-tag">Habit 12 · Weekly</div>
   <div class="habit-header"><span class="habit-emoji">📝</span><div><div class="habit-title">The Character Study &amp; Scripting Practice</div><span class="habit-when">Once a week · rotate between two modes</span></div></div>
   <p class="habit-body"><strong>Mode A — Scripting:</strong> Write a short scene in present tense as if you're already living a moment in your desired life. Sensory details, emotions, environment — inhabit it fully.</p>
@@ -388,9 +422,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Manifestation Layer</div><p class="science-text">You're not wishing from a distance — you're collapsing the psychological and energetic gap between who you are now and who you're becoming. The more vividly you inhabit that identity on paper, the more your brain treats it as your natural state.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 13 -->
-<div class="habit-card manifest">
+<div class="habit-card manifest" id="habit-13">
   <div class="habit-tag">Habit 13 · Daily</div>
   <div class="habit-header"><span class="habit-emoji">🎵</span><div><div class="habit-title">The Manifestation Playlist</div><span class="habit-when">Daily · during an existing activity</span></div></div>
   <p class="habit-body">Create a dedicated playlist of songs that make you feel like the version of yourself you're becoming — <strong>playful, happy, free</strong>. Not songs that match your current mood, but songs that match your <em>desired</em> emotional state. Play it intentionally at least once a day during something you're already doing.</p>
@@ -398,9 +432,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Manifestation Layer</div><p class="science-text">A carefully chosen playlist is a <em>vibrational tool</em> — one that shifts your frequency toward your desired state quickly and reliably, even on days when other practices feel out of reach.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 14 -->
-<div class="habit-card manifest">
+<div class="habit-card manifest" id="habit-14">
   <div class="habit-tag">Habit 14 · Daily</div>
   <div class="habit-header"><span class="habit-emoji">💃</span><div><div class="habit-title">The Embodiment Trigger</div><span class="habit-when">Daily · choose what fits your energy level</span></div></div>
   <p class="habit-body">Once a day, do something physical that embodies how you want to feel — <strong>playful, happy, free</strong>. On high energy days you dance; on low energy days you hold a warm mug and look out the window. Both count equally.</p>
@@ -413,9 +447,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text"><em>Embodied cognition</em> — your body doesn't just express emotions, it actively generates them. Expansive, open physical postures directly trigger the emotional states associated with them. You're not waiting to feel free — you're choosing free in your body first, and letting the feeling follow.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 15 -->
-<div class="habit-card manifest">
+<div class="habit-card manifest" id="habit-15">
   <div class="habit-tag">Habit 15 · Reactive</div>
   <div class="habit-header"><span class="habit-emoji">🌉</span><div><div class="habit-title">The Belief Bridge</div><span class="habit-when">When doubt arrives — meet it with a bridge, not a leap</span></div></div>
   <p class="habit-body">When the doubting voice shows up, don't try to silence it or leap to full belief. Meet it with a <strong>bridging statement</strong> that moves you incrementally toward possibility.</p>
@@ -439,7 +473,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Rather than suppressing doubt (which strengthens it through <em>ironic process theory</em>), you're gently redirecting the neural pathway toward possibility. Each bridge weakens the doubt pathway and strengthens belief incrementally, until belief becomes the brain's default response to your vision.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- PART THREE -->
 <div class="part-header">
   <div class="part-number spirit">Part Three · Habits 16–20</div>
@@ -447,9 +481,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <h2 class="part-title spirit">The Search for<br><em>Something Bigger</em></h2>
   <p class="part-desc">Five habits for the days when faith feels unreasonable, the plan feels invisible, and you need a way back to God and to something larger than yourself. The questioning doesn't interrupt the divine relationship. It initiates it.</p>
 </div>
-
+ 
 <!-- HABIT 16 -->
-<div class="habit-card spirit">
+<div class="habit-card spirit" id="habit-16">
   <div class="habit-tag">Habit 16 · Hard Days</div>
   <div class="habit-header"><span class="habit-emoji">🙏</span><div><div class="habit-title">The Why Letter</div><span class="habit-when">When you need to find God and ask him directly</span></div></div>
   <p class="habit-body">When disconnection hits and you want to understand the plan — write God a letter. Not a prayer. Not a gratitude list. A real, honest, unfiltered letter. It can be entirely questions — that is not only fine, it is sacred.</p>
@@ -459,9 +493,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Spiritual Layer</div><p class="science-text">In the Bhakti tradition, raw honest emotional expression <em>to</em> the divine is considered one of the highest forms of devotion. You don't demand answers from a stranger — you demand them from someone you love and trust enough to be furious with. The why is the relationship.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 17 -->
-<div class="habit-card spirit">
+<div class="habit-card spirit" id="habit-17">
   <div class="habit-tag">Habit 17 · Hard Days</div>
   <div class="habit-header"><span class="habit-emoji">🌿</span><div><div class="habit-title">The Portal Practice</div><span class="habit-when">When the abstract feels unreachable — step through a door</span></div></div>
   <p class="habit-body">On days when the abstract feels unreasonable, deliberately step through one of your three doors — <strong>nature, art, or love</strong> — with the specific intention of using it as a bridge back to connection.</p>
@@ -475,9 +509,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Spiritual Layer</div><p class="science-text">Nature, art, and human love are all considered manifestations of Brahman in Hindu philosophy. You're not finding a substitute for God on the hard days. You're finding God in a different form.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 18 -->
-<div class="habit-card spirit">
+<div class="habit-card spirit" id="habit-18">
   <div class="habit-tag">Habit 18 · Ongoing</div>
   <div class="habit-header"><span class="habit-emoji">🧵</span><div><div class="habit-title">The Tapestry Record</div><span class="habit-when">Add slowly over time · read on hard days</span></div></div>
   <p class="habit-body">Create a dedicated space called <strong>"The Tapestry"</strong> or <strong>"Evidence of the Plan."</strong> Record moments where something that felt wrong, painful, or confusing eventually revealed a deeper purpose or led somewhere meaningful.</p>
@@ -487,21 +521,21 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Spiritual Layer</div><p class="science-text">In Hindu philosophy, <em>Leela</em> — divine play — holds that God's actions are purposeful but not always immediately legible. The Tapestry Record is your personal evidence of Leela. You cannot always see the weaving from inside the thread. The pattern only becomes visible when you step back far enough.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 19 -->
-<div class="habit-card spirit">
+<div class="habit-card spirit" id="habit-19">
   <div class="habit-tag">Habit 19 · Daily</div>
   <div class="habit-header"><span class="habit-emoji">🌸</span><div><div class="habit-title">The Two-Way Moment</div><span class="habit-when">After your natural moment of talking to God</span></div></div>
   <p class="habit-body">After your natural moment of talking to God — whether internal, in front of your idol, or looking at the sky — add one small thing: <strong>pause and listen.</strong> Thirty seconds. One minute. A genuine, unhurried moment of receptive silence.</p>
   <p class="habit-body">On hard days, frame it as:</p>
-  <div class="habit-highlight">"I've said what I needed to say. I don't understand. But I'm here and I'm listening."</div>
+  <div class="habit-highlight">"I'm here and I'm open to whatever comes my way."</div>
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Deliberately shifting into a receptive, quiet state activates your brain's <em>default mode network</em> in its most restorative configuration — the state associated with insight, creativity, and spiritual experience. You're creating the space, not forcing the experience.</p></div>
   <div class="science-block"><div class="science-label">The Spiritual Layer</div><p class="science-text">In the Upanishadic tradition, <em>Shravana</em> — deep, receptive listening — is one of the three essential steps of spiritual practice. Your existing practice is already devotion. Adding the pause transforms it into dialogue.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 20 -->
-<div class="habit-card spirit">
+<div class="habit-card spirit" id="habit-20">
   <div class="habit-tag">Habit 20 · Morning</div>
   <div class="habit-header"><span class="habit-emoji">🌟</span><div><div class="habit-title">The Impossible Six</div><span class="habit-when">Morning · especially on the hardest days</span></div></div>
   <p class="habit-body">Before getting out of bed, think of, write, or whisper <strong>six things you're choosing to believe are possible right now</strong> — even if they feel impossible. Especially if they do. On the easiest days this will feel natural and joyful. On the hardest days it will feel slightly absurd. Both are perfect. Both are the point.</p>
@@ -517,7 +551,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">The Spiritual Layer</div><p class="science-text"><em>Shraddha</em> — a form of faith that is less about certainty and more about orientation. You're not claiming to know the plan. You're choosing to trust that one exists. Six times. Before the day has even begun.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- PART FOUR -->
 <div class="part-header">
   <div class="part-number whimsy">Part Four · Habits 21–25</div>
@@ -525,9 +559,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <h2 class="part-title whimsy">Staying Alive<br><em>to Wonder</em></h2>
   <p class="part-desc">Five habits that keep delight, play, and magic woven into the everyday — because joy isn't a reward for getting everything right. It's part of the practice itself. These habits aren't manufactured. They're recognized, allowed, and fully inhabited.</p>
 </div>
-
+ 
 <!-- HABIT 21 -->
-<div class="habit-card whimsy">
+<div class="habit-card whimsy" id="habit-21">
   <div class="habit-tag">Habit 21 · When It Arrives</div>
   <div class="habit-header"><span class="habit-emoji">🎪</span><div><div class="habit-title">The Yes Moment</div><span class="habit-when">When spontaneity knocks — open the door</span></div></div>
   <p class="habit-body">When a small, spontaneous opportunity presents itself — and you feel the flicker of <em>"that could be fun"</em> immediately followed by <em>"but actually never mind"</em> — choose yes instead. The habit isn't about manufacturing spontaneity. It's about noticing when it's already knocking.</p>
@@ -543,9 +577,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">The "but actually never mind" response is your brain's <em>familiarity bias</em> — defaulting to the known path because novelty requires slightly more energy. Every time you choose yes, you're weakening that default and strengthening a new one that says new things are safe and rewarding.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 22 -->
-<div class="habit-card whimsy">
+<div class="habit-card whimsy" id="habit-22">
   <div class="habit-tag">Habit 22 · Any Moment</div>
   <div class="habit-header"><span class="habit-emoji">🎬</span><div><div class="habit-title">The Secret Narrator</div><span class="habit-when">In any ordinary moment — give it a voice</span></div></div>
   <p class="habit-body">Give your life a narrator. In your head, describe what's happening as if it's a scene in a film, a passage in a novel, or a nature documentary about the remarkably interesting creature that is you. It can be dry, lyrical, or absurd. It just has to be yours.</p>
@@ -554,9 +588,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text"><em>Cognitive defusion</em> — creating a small psychological distance between yourself and your experience by observing it rather than being consumed by it. This reduces the emotional intensity of difficult moments and transforms ordinary moments into something worth noticing.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div><span>10/10</span></div>
 </div>
-
+ 
 <!-- HABIT 23 -->
-<div class="habit-card whimsy">
+<div class="habit-card whimsy" id="habit-23">
   <div class="habit-tag">Habit 23 · Occasionally</div>
   <div class="habit-header"><span class="habit-emoji">🫧</span><div><div class="habit-title">The Pointless Making</div><span class="habit-when">Occasionally · no schedule, no pressure, no purpose</span></div></div>
   <p class="habit-body">Do something with your hands that is purely tactile, creative, and without purpose or outcome. Not to produce anything. Not to be good at it. Just to make something for the joy of making it.</p>
@@ -572,9 +606,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Unstructured tactile play activates the brain's <em>default mode network</em> in its most restorative state. Repetitive hand movements — coloring, beading, weaving — reduce cortisol and activate the same calming neural pathways as meditation. Your hands know how to rest your mind. They've always known.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div><span>8/10</span></div>
 </div>
-
+ 
 <!-- HABIT 24 -->
-<div class="habit-card whimsy">
+<div class="habit-card whimsy" id="habit-24">
   <div class="habit-tag">Habit 24 · When It Arrives</div>
   <div class="habit-header"><span class="habit-emoji">🎈</span><div><div class="habit-title">The Full Surrender</div><span class="habit-when">With someone · or gloriously alone</span></div></div>
   <p class="habit-body"><strong>When the person is there and the moment arrives:</strong> Surrender to genuine, unself-conscious silliness completely. Don't manage it, don't half-participate, don't let it peter out before it's ready. Follow the thread all the way to the end.</p>
@@ -582,9 +616,9 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="science-block"><div class="science-label">Why It Works</div><p class="science-text">Genuine unrestrained laughter floods the system with <em>dopamine, serotonin, and oxytocin</em> simultaneously — a combination difficult to achieve through any other means. Shared silliness creates <em>moments of levity</em> the brain tags as deeply meaningful and stores as positive relational memories that last far longer than the moment itself.</p></div>
   <div class="ease-row"><span>Ease to start</span><div class="ease-dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div><span>9/10</span></div>
 </div>
-
+ 
 <!-- HABIT 25 -->
-<div class="habit-card whimsy">
+<div class="habit-card whimsy" id="habit-25">
   <div class="habit-tag">Habit 25 · When It Arrives</div>
   <div class="habit-header"><span class="habit-emoji">🌸</span><div><div class="habit-title">The Fleeting Thing</div><span class="habit-when">When something beautiful arrives — stay with it</span></div></div>
   <p class="habit-body">Once in a while — not on a schedule, only when it arrives — let yourself be fully, unhurriedly present with something beautiful that won't last. Don't photograph it immediately. Don't describe it. Don't share it. Just be with it completely, for as long as it holds you.</p>
@@ -611,50 +645,50 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
     <div class="rhythm-cell">
       <div class="rhythm-time">Morning</div>
       <ul class="rhythm-habits">
-        <li><span class="r-emoji">☀️</span> One-Sentence Intention</li>
-        <li><span class="r-emoji">🕯️</span> Dresser Top Ritual</li>
-        <li><span class="r-emoji">✨</span> Feeling First Visualization</li>
-        <li><span class="r-emoji">🎵</span> Manifestation Playlist</li>
-        <li><span class="r-emoji">🌟</span> The Impossible Six</li>
+        <li><span class="r-emoji">☀️</span> <a href="#habit-02" class="habit-link">One-Sentence Intention</a></li>
+        <li><span class="r-emoji">🕯️</span> <a href="#habit-07" class="habit-link">Dresser Top Ritual</a></li>
+        <li><span class="r-emoji">✨</span> <a href="#habit-11" class="habit-link">Feeling First Visualization</a></li>
+        <li><span class="r-emoji">🎵</span> <a href="#habit-13" class="habit-link">Manifestation Playlist</a></li>
+        <li><span class="r-emoji">🌟</span> <a href="#habit-20" class="habit-link">The Impossible Six</a></li>
       </ul>
     </div>
     <div class="rhythm-cell">
       <div class="rhythm-time">During the Day</div>
       <ul class="rhythm-habits">
-        <li><span class="r-emoji">🔄</span> Reset Breath (reactive)</li>
-        <li><span class="r-emoji">⚓</span> Anchor Phrase (reactive)</li>
-        <li><span class="r-emoji">🚶</span> Two-Minute Reset (as needed)</li>
-        <li><span class="r-emoji">📱</span> One Question Pause (as needed)</li>
-        <li><span class="r-emoji">🤝</span> One Real Moment</li>
-        <li><span class="r-emoji">💃</span> Embodiment Trigger</li>
-        <li><span class="r-emoji">🌉</span> Belief Bridge (as needed)</li>
-        <li><span class="r-emoji">🌸</span> Two-Way Moment</li>
-        <li><span class="r-emoji">🎪</span> Yes Moment (when it arrives)</li>
-        <li><span class="r-emoji">🎬</span> Secret Narrator (any moment)</li>
+        <li><span class="r-emoji">🔄</span> <a href="#habit-03" class="habit-link">Reset Breath (reactive)</a></li>
+        <li><span class="r-emoji">⚓</span> <a href="#habit-04" class="habit-link">Anchor Phrase (reactive)</a></li>
+        <li><span class="r-emoji">🚶</span> <a href="#habit-09" class="habit-link">Two-Minute Reset (as needed)</a></li>
+        <li><span class="r-emoji">📱</span> <a href="#habit-08" class="habit-link">One Question Pause (as needed)</a></li>
+        <li><span class="r-emoji">🤝</span> <a href="#habit-05" class="habit-link">One Real Moment</a></li>
+        <li><span class="r-emoji">💃</span> <a href="#habit-14" class="habit-link">Embodiment Trigger</a></li>
+        <li><span class="r-emoji">🌉</span> <a href="#habit-15" class="habit-link">Belief Bridge (as needed)</a></li>
+        <li><span class="r-emoji">🌸</span> <a href="#habit-19" class="habit-link">Two-Way Moment</a></li>
+        <li><span class="r-emoji">🎪</span> <a href="#habit-21" class="habit-link">Yes Moment (when it arrives)</a></li>
+        <li><span class="r-emoji">🎬</span> <a href="#habit-22" class="habit-link">Secret Narrator (any moment)</a></li>
       </ul>
     </div>
     <div class="rhythm-cell">
       <div class="rhythm-time">Evening &amp; Weekly</div>
       <ul class="rhythm-habits">
-        <li><span class="r-emoji">🌙</span> 3-Win Evening Review</li>
-        <li><span class="r-emoji">📂</span> Evidence File (add to it)</li>
-        <li><span class="r-emoji">✍️</span> Weekly Growth Write</li>
-        <li><span class="r-emoji">📝</span> Character Study / Scripting</li>
-        <li><span class="r-emoji">🙏</span> Why Letter (hard days)</li>
-        <li><span class="r-emoji">🌿</span> Portal Practice (hard days)</li>
-        <li><span class="r-emoji">🫧</span> Pointless Making (occasionally)</li>
-        <li><span class="r-emoji">🌸</span> The Fleeting Thing (when it arrives)</li>
+        <li><span class="r-emoji">🌙</span> <a href="#habit-01" class="habit-link">3-Win Evening Review</a></li>
+        <li><span class="r-emoji">📂</span> <a href="#habit-10" class="habit-link">Evidence File (add to it)</a></li>
+        <li><span class="r-emoji">✍️</span> <a href="#habit-06" class="habit-link">Weekly Growth Write</a></li>
+        <li><span class="r-emoji">📝</span> <a href="#habit-12" class="habit-link">Character Study / Scripting</a></li>
+        <li><span class="r-emoji">🙏</span> <a href="#habit-16" class="habit-link">Why Letter (hard days)</a></li>
+        <li><span class="r-emoji">🌿</span> <a href="#habit-17" class="habit-link">Portal Practice (hard days)</a></li>
+        <li><span class="r-emoji">🫧</span> <a href="#habit-23" class="habit-link">Pointless Making (occasionally)</a></li>
+        <li><span class="r-emoji">🌸</span> <a href="#habit-25" class="habit-link">The Fleeting Thing (when it arrives)</a></li>
       </ul>
     </div>
   </div>
 </div>
-
+ 
 <!-- WHEN YOU NEED A WAY BACK -->
 <div class="wayback-section">
   <div class="section-eyebrow">Quick Guide</div>
   <h2 class="section-heading">When You Need<br><em>a Way Back</em></h2>
   <p class="wayback-intro">Scan for where you are. Pick what feels most accessible, not what feels most correct. One is always enough. You don't need to do everything on the list — just find the door that's open today and walk through it.</p>
-
+ 
   <!-- MIND -->
   <div class="emotional-category">
     <div class="emotional-category-header">
@@ -664,68 +698,68 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <div class="emotional-category-subtitle">When thoughts are the thing that needs tending</div>
       </div>
     </div>
-
+ 
     <div class="when-card">
       <div class="when-title">When the spiral starts and you can't stop the thoughts</div>
       <div class="when-subtitle">The loop is running and you can't find the exit</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🔄 Reset Breath</span> <span class="when-habit-desc">— inhale 4, exhale 6, interrupt the momentum</span></li>
-        <li><span class="when-habit-name">⚓ Anchor Phrase</span> <span class="when-habit-desc">— "Stop. This isn't worth my peace."</span></li>
-        <li><span class="when-habit-name">🚶 Two-Minute Reset</span> <span class="when-habit-desc">— move your body, break the default mode network</span></li>
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— meet the doubt with a gentler thought, not a fight</span></li>
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— write the questions you can't stop asking</span></li>
+        <li><a href="#habit-03" class="habit-link when-habit-link"><span class="when-habit-name">🔄 Reset Breath</span></a> <span class="when-habit-desc">— inhale 4, exhale 6, interrupt the momentum</span></li>
+        <li><a href="#habit-04" class="habit-link when-habit-link"><span class="when-habit-name">⚓ Anchor Phrase</span></a> <span class="when-habit-desc">— "Stop. This isn't worth my peace."</span></li>
+        <li><a href="#habit-09" class="habit-link when-habit-link"><span class="when-habit-name">🚶 Two-Minute Reset</span></a> <span class="when-habit-desc">— move your body, break the default mode network</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— meet the doubt with a gentler thought, not a fight</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— write the questions you can't stop asking</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card">
       <div class="when-title">When you're being hard on yourself</div>
       <div class="when-subtitle">The inner critic is louder than everything else</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">⚓ Anchor Phrase</span> <span class="when-habit-desc">— "Stop. This isn't worth my peace."</span></li>
-        <li><span class="when-habit-name">📂 Evidence File</span> <span class="when-habit-desc">— read proof of your own capability</span></li>
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— find the thought that's truer than the criticism</span></li>
-        <li><span class="when-habit-name">✍️ Weekly Growth Write</span> <span class="when-habit-desc">— write your way to a kinder perspective</span></li>
-        <li><span class="when-habit-name">📝 Character Study</span> <span class="when-habit-desc">— write about the version of you who handles this with grace</span></li>
+        <li><a href="#habit-04" class="habit-link when-habit-link"><span class="when-habit-name">⚓ Anchor Phrase</span></a> <span class="when-habit-desc">— "Stop. This isn't worth my peace."</span></li>
+        <li><a href="#habit-10" class="habit-link when-habit-link"><span class="when-habit-name">📂 Evidence File</span></a> <span class="when-habit-desc">— read proof of your own capability</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— find the thought that's truer than the criticism</span></li>
+        <li><a href="#habit-06" class="habit-link when-habit-link"><span class="when-habit-name">✍️ Weekly Growth Write</span></a> <span class="when-habit-desc">— write your way to a kinder perspective</span></li>
+        <li><a href="#habit-12" class="habit-link when-habit-link"><span class="when-habit-name">📝 Character Study</span></a> <span class="when-habit-desc">— write about the version of you who handles this with grace</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card">
       <div class="when-title">When doubt is louder than belief</div>
       <div class="when-subtitle">The logical mind is winning against the faithful heart</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— you don't need a leap, just one step toward possible</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— read your own evidence that the plan has shown up before</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— believe six impossible things before the doubt wins the day</span></li>
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— ask God directly, honestly, without composure</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— speak first, then listen longer than feels comfortable</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— you don't need a leap, just one step toward possible</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— read your own evidence that the plan has shown up before</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— believe six impossible things before the doubt wins the day</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— ask God directly, honestly, without composure</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— speak first, then listen longer than feels comfortable</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card">
       <div class="when-title">When the day ahead feels overwhelming</div>
       <div class="when-subtitle">Everything feels like too much before it's even begun</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">☀️ Morning Intention</span> <span class="when-habit-desc">— choose one word for how you want to feel today</span></li>
-        <li><span class="when-habit-name">🕯️ Dresser Top Ritual</span> <span class="when-habit-desc">— one breath at your anchor space before the day starts</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— prime your mind toward possibility before it fills with tasks</span></li>
-        <li><span class="when-habit-name">🔄 Reset Breath</span> <span class="when-habit-desc">— slow the nervous system before it braces for impact</span></li>
-        <li><span class="when-habit-name">✨ Feeling First Visualization</span> <span class="when-habit-desc">— start from a feeling of capability, not dread</span></li>
+        <li><a href="#habit-02" class="habit-link when-habit-link"><span class="when-habit-name">☀️ Morning Intention</span></a> <span class="when-habit-desc">— choose one word for how you want to feel today</span></li>
+        <li><a href="#habit-07" class="habit-link when-habit-link"><span class="when-habit-name">🕯️ Dresser Top Ritual</span></a> <span class="when-habit-desc">— one breath at your anchor space before the day starts</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— prime your mind toward possibility before it fills with tasks</span></li>
+        <li><a href="#habit-03" class="habit-link when-habit-link"><span class="when-habit-name">🔄 Reset Breath</span></a> <span class="when-habit-desc">— slow the nervous system before it braces for impact</span></li>
+        <li><a href="#habit-11" class="habit-link when-habit-link"><span class="when-habit-name">✨ Feeling First Visualization</span></a> <span class="when-habit-desc">— start from a feeling of capability, not dread</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card">
       <div class="when-title">When creative work feels pointless or beyond you</div>
       <div class="when-subtitle">The inner writer has gone quiet and doubt has taken her seat</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">📂 Evidence File</span> <span class="when-habit-desc">— your first entry is the piece of writing you loved</span></li>
-        <li><span class="when-habit-name">📝 Character Study</span> <span class="when-habit-desc">— write about the version of you who creates freely</span></li>
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— "But I wrote something I loved, which means the ability is already there"</span></li>
-        <li><span class="when-habit-name">✨ Feeling First Visualization</span> <span class="when-habit-desc">— return to the memory of creative pride</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— let art open the door back to yourself</span></li>
+        <li><a href="#habit-10" class="habit-link when-habit-link"><span class="when-habit-name">📂 Evidence File</span></a> <span class="when-habit-desc">— your first entry is the piece of writing you loved</span></li>
+        <li><a href="#habit-12" class="habit-link when-habit-link"><span class="when-habit-name">📝 Character Study</span></a> <span class="when-habit-desc">— write about the version of you who creates freely</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— "But I wrote something I loved, which means the ability is already there"</span></li>
+        <li><a href="#habit-11" class="habit-link when-habit-link"><span class="when-habit-name">✨ Feeling First Visualization</span></a> <span class="when-habit-desc">— return to the memory of creative pride</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— let art open the door back to yourself</span></li>
       </ul>
     </div>
   </div>
-
+ 
   <!-- HEART -->
   <div class="emotional-category">
     <div class="emotional-category-header heart">
@@ -735,92 +769,92 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <div class="emotional-category-subtitle">When emotions are what need to be heard first</div>
       </div>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you're feeling heavy</div>
       <div class="when-subtitle">A weight you can't quite name is sitting on everything</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🎵 Manifestation Playlist</span> <span class="when-habit-desc">— let sound shift what words can't reach</span></li>
-        <li><span class="when-habit-name">💃 Embodiment Trigger</span> <span class="when-habit-desc">— move your body, even thirty seconds counts</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— step through nature, art, or love back toward yourself</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— tell God how heavy it feels, then wait</span></li>
-        <li><span class="when-habit-name">🚶 Two-Minute Reset</span> <span class="when-habit-desc">— biology first, meaning second</span></li>
+        <li><a href="#habit-13" class="habit-link when-habit-link"><span class="when-habit-name">🎵 Manifestation Playlist</span></a> <span class="when-habit-desc">— let sound shift what words can't reach</span></li>
+        <li><a href="#habit-14" class="habit-link when-habit-link"><span class="when-habit-name">💃 Embodiment Trigger</span></a> <span class="when-habit-desc">— move your body, even thirty seconds counts</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— step through nature, art, or love back toward yourself</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— tell God how heavy it feels, then wait</span></li>
+        <li><a href="#habit-09" class="habit-link when-habit-link"><span class="when-habit-name">🚶 Two-Minute Reset</span></a> <span class="when-habit-desc">— biology first, meaning second</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you feel lonely or invisible</div>
       <div class="when-subtitle">Surrounded by people or entirely alone — either way, disconnected</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🤝 One Real Moment</span> <span class="when-habit-desc">— one genuine connection, however small</span></li>
-        <li><span class="when-habit-name">📂 Evidence File</span> <span class="when-habit-desc">— remind yourself you are known and capable</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— let love, art, or nature remind you you're not separate</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— God is the one who always knows you're there</span></li>
-        <li><span class="when-habit-name">📝 Character Study</span> <span class="when-habit-desc">— write about the version of you who feels truly seen</span></li>
+        <li><a href="#habit-05" class="habit-link when-habit-link"><span class="when-habit-name">🤝 One Real Moment</span></a> <span class="when-habit-desc">— one genuine connection, however small</span></li>
+        <li><a href="#habit-10" class="habit-link when-habit-link"><span class="when-habit-name">📂 Evidence File</span></a> <span class="when-habit-desc">— remind yourself you are known and capable</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— let love, art, or nature remind you you're not separate</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— God is the one who always knows you're there</span></li>
+        <li><a href="#habit-12" class="habit-link when-habit-link"><span class="when-habit-name">📝 Character Study</span></a> <span class="when-habit-desc">— write about the version of you who feels truly seen</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When someone or something has genuinely hurt you</div>
       <div class="when-subtitle">The pain is real and the wound is fresh</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">⚓ Anchor Phrase</span> <span class="when-habit-desc">— reclaim your peace before anything else</span></li>
-        <li><span class="when-habit-name">🔄 Reset Breath</span> <span class="when-habit-desc">— slow the body's alarm response first</span></li>
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— write to God about the hurt without softening it</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— say it all, then leave space to be held</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— not yet, but when you're ready — look for the thread</span></li>
+        <li><a href="#habit-04" class="habit-link when-habit-link"><span class="when-habit-name">⚓ Anchor Phrase</span></a> <span class="when-habit-desc">— reclaim your peace before anything else</span></li>
+        <li><a href="#habit-03" class="habit-link when-habit-link"><span class="when-habit-name">🔄 Reset Breath</span></a> <span class="when-habit-desc">— slow the body's alarm response first</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— write to God about the hurt without softening it</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— say it all, then leave space to be held</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— not yet, but when you're ready — look for the thread</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you're angry</div>
       <div class="when-subtitle">The feeling is hot, legitimate, and needs somewhere to go</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🚶 Two-Minute Reset</span> <span class="when-habit-desc">— move the energy through your body first</span></li>
-        <li><span class="when-habit-name">🔄 Reset Breath</span> <span class="when-habit-desc">— not to suppress the anger, but to widen the window before you act</span></li>
-        <li><span class="when-habit-name">⚓ Anchor Phrase</span> <span class="when-habit-desc">— decide whether it's worth your peace before you respond</span></li>
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— write the anger directly to God, unfiltered and uncensored</span></li>
-        <li><span class="when-habit-name">✍️ Weekly Growth Write</span> <span class="when-habit-desc">— use the Plot Twist format when the heat has cooled</span></li>
+        <li><a href="#habit-09" class="habit-link when-habit-link"><span class="when-habit-name">🚶 Two-Minute Reset</span></a> <span class="when-habit-desc">— move the energy through your body first</span></li>
+        <li><a href="#habit-03" class="habit-link when-habit-link"><span class="when-habit-name">🔄 Reset Breath</span></a> <span class="when-habit-desc">— not to suppress the anger, but to widen the window before you act</span></li>
+        <li><a href="#habit-04" class="habit-link when-habit-link"><span class="when-habit-name">⚓ Anchor Phrase</span></a> <span class="when-habit-desc">— decide whether it's worth your peace before you respond</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— write the anger directly to God, unfiltered and uncensored</span></li>
+        <li><a href="#habit-06" class="habit-link when-habit-link"><span class="when-habit-name">✍️ Weekly Growth Write</span></a> <span class="when-habit-desc">— use the Plot Twist format when the heat has cooled</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you feel like life is being unfair</div>
       <div class="when-subtitle">The scales feel tipped and resentment is building</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— say exactly what feels unfair without dressing it up</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— look for the thread in something that felt unfair before</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— ask why, then sit in the silence after</span></li>
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— "But I've been here before and it revealed something I couldn't see yet"</span></li>
-        <li><span class="when-habit-name">✍️ Weekly Growth Write</span> <span class="when-habit-desc">— use the Pattern Spotter or Plot Twist format</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— say exactly what feels unfair without dressing it up</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— look for the thread in something that felt unfair before</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— ask why, then sit in the silence after</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— "But I've been here before and it revealed something I couldn't see yet"</span></li>
+        <li><a href="#habit-06" class="habit-link when-habit-link"><span class="when-habit-name">✍️ Weekly Growth Write</span></a> <span class="when-habit-desc">— use the Pattern Spotter or Plot Twist format</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you need to feel like yourself again</div>
       <div class="when-subtitle">You've drifted and the real you feels far away</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🎵 Manifestation Playlist</span> <span class="when-habit-desc">— playful, happy, free — let the music find her first</span></li>
-        <li><span class="when-habit-name">💃 Embodiment Trigger</span> <span class="when-habit-desc">— do something that feels like you, in your body</span></li>
-        <li><span class="when-habit-name">✨ Feeling First Visualization</span> <span class="when-habit-desc">— return to a memory where you felt most yourself</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— step through the door that's most alive today</span></li>
-        <li><span class="when-habit-name">📝 Character Study</span> <span class="when-habit-desc">— write about her until you remember who she is</span></li>
+        <li><a href="#habit-13" class="habit-link when-habit-link"><span class="when-habit-name">🎵 Manifestation Playlist</span></a> <span class="when-habit-desc">— playful, happy, free — let the music find her first</span></li>
+        <li><a href="#habit-14" class="habit-link when-habit-link"><span class="when-habit-name">💃 Embodiment Trigger</span></a> <span class="when-habit-desc">— do something that feels like you, in your body</span></li>
+        <li><a href="#habit-11" class="habit-link when-habit-link"><span class="when-habit-name">✨ Feeling First Visualization</span></a> <span class="when-habit-desc">— return to a memory where you felt most yourself</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— step through the door that's most alive today</span></li>
+        <li><a href="#habit-12" class="habit-link when-habit-link"><span class="when-habit-name">📝 Character Study</span></a> <span class="when-habit-desc">— write about her until you remember who she is</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card heart">
       <div class="when-title">When you want to feel playful, happy, and free</div>
       <div class="when-subtitle">Not a hard day — just a deliberate choice to inhabit joy</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🎵 Manifestation Playlist</span> <span class="when-habit-desc">— put it on immediately, no preamble</span></li>
-        <li><span class="when-habit-name">💃 Embodiment Trigger</span> <span class="when-habit-desc">— dance, spin, laugh, move — full expression</span></li>
-        <li><span class="when-habit-name">✨ Feeling First Visualization</span> <span class="when-habit-desc">— find the memory that holds all three feelings</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— believe something wonderful is about to happen</span></li>
-        <li><span class="when-habit-name">🤝 One Real Moment</span> <span class="when-habit-desc">— share the good feeling with someone real</span></li>
+        <li><a href="#habit-13" class="habit-link when-habit-link"><span class="when-habit-name">🎵 Manifestation Playlist</span></a> <span class="when-habit-desc">— put it on immediately, no preamble</span></li>
+        <li><a href="#habit-14" class="habit-link when-habit-link"><span class="when-habit-name">💃 Embodiment Trigger</span></a> <span class="when-habit-desc">— dance, spin, laugh, move — full expression</span></li>
+        <li><a href="#habit-11" class="habit-link when-habit-link"><span class="when-habit-name">✨ Feeling First Visualization</span></a> <span class="when-habit-desc">— find the memory that holds all three feelings</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— believe something wonderful is about to happen</span></li>
+        <li><a href="#habit-05" class="habit-link when-habit-link"><span class="when-habit-name">🤝 One Real Moment</span></a> <span class="when-habit-desc">— share the good feeling with someone real</span></li>
       </ul>
     </div>
   </div>
-
+ 
   <!-- SOUL -->
   <div class="emotional-category">
     <div class="emotional-category-header soul">
@@ -830,64 +864,64 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <div class="emotional-category-subtitle">When connection to something bigger is what's missing</div>
       </div>
     </div>
-
+ 
     <div class="when-card soul">
       <div class="when-title">When you feel disconnected from God or the universe</div>
       <div class="when-subtitle">The line feels quiet and the abstract feels out of reach</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— reach out even when it feels one-sided</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— find God through nature, art, or love today</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— speak first, then listen longer than feels comfortable</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— read the evidence that connection has been real before</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— choose to believe in the connection even before you feel it</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— reach out even when it feels one-sided</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— find God through nature, art, or love today</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— speak first, then listen longer than feels comfortable</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— read the evidence that connection has been real before</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— choose to believe in the connection even before you feel it</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card soul">
       <div class="when-title">When faith feels unreasonable and trust feels impossible</div>
       <div class="when-subtitle">The logical mind and the faithful heart are at war</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— write the questions without needing the answers</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— your personal proof that the plan has appeared before</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— "Always believe that something wonderful is about to happen"</span></li>
-        <li><span class="when-habit-name">🌉 Belief Bridge</span> <span class="when-habit-desc">— you don't need full faith, just one step toward possible</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— "I don't understand. But I'm still here. And I'm still talking to you."</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— write the questions without needing the answers</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— your personal proof that the plan has appeared before</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— "Always believe that something wonderful is about to happen"</span></li>
+        <li><a href="#habit-15" class="habit-link when-habit-link"><span class="when-habit-name">🌉 Belief Bridge</span></a> <span class="when-habit-desc">— you don't need full faith, just one step toward possible</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— "I don't understand. But I'm still here. And I'm still talking to you."</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card soul">
       <div class="when-title">When something goes wrong and you want to understand why</div>
       <div class="when-subtitle">The need for meaning is stronger than the ability to trust</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🙏 Why Letter</span> <span class="when-habit-desc">— ask God directly, as many questions as you have</span></li>
-        <li><span class="when-habit-name">🧵 Tapestry Record</span> <span class="when-habit-desc">— look for other threads where the why eventually appeared</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— ask, then hold the silence open for whatever comes</span></li>
-        <li><span class="when-habit-name">✍️ Weekly Growth Write</span> <span class="when-habit-desc">— use the Plot Twist or Pattern Spotter format</span></li>
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— when understanding won't come, let beauty hold you instead</span></li>
+        <li><a href="#habit-16" class="habit-link when-habit-link"><span class="when-habit-name">🙏 Why Letter</span></a> <span class="when-habit-desc">— ask God directly, as many questions as you have</span></li>
+        <li><a href="#habit-18" class="habit-link when-habit-link"><span class="when-habit-name">🧵 Tapestry Record</span></a> <span class="when-habit-desc">— look for other threads where the why eventually appeared</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— ask, then hold the silence open for whatever comes</span></li>
+        <li><a href="#habit-06" class="habit-link when-habit-link"><span class="when-habit-name">✍️ Weekly Growth Write</span></a> <span class="when-habit-desc">— use the Plot Twist or Pattern Spotter format</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— when understanding won't come, let beauty hold you instead</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card soul">
       <div class="when-title">When you don't know what you feel</div>
       <div class="when-subtitle">The emotion is unidentifiable and the fog is thick</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">🌿 Portal Practice</span> <span class="when-habit-desc">— don't name it, just step through a door</span></li>
-        <li><span class="when-habit-name">💃 Embodiment Trigger</span> <span class="when-habit-desc">— let your body lead before your mind tries to explain</span></li>
-        <li><span class="when-habit-name">🎵 Manifestation Playlist</span> <span class="when-habit-desc">— let the music find the feeling you can't locate</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— you don't need words, just presence</span></li>
-        <li><span class="when-habit-name">🚶 Two-Minute Reset</span> <span class="when-habit-desc">— movement first, meaning when it's ready</span></li>
+        <li><a href="#habit-17" class="habit-link when-habit-link"><span class="when-habit-name">🌿 Portal Practice</span></a> <span class="when-habit-desc">— don't name it, just step through a door</span></li>
+        <li><a href="#habit-14" class="habit-link when-habit-link"><span class="when-habit-name">💃 Embodiment Trigger</span></a> <span class="when-habit-desc">— let your body lead before your mind tries to explain</span></li>
+        <li><a href="#habit-13" class="habit-link when-habit-link"><span class="when-habit-name">🎵 Manifestation Playlist</span></a> <span class="when-habit-desc">— let the music find the feeling you can't locate</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— you don't need words, just presence</span></li>
+        <li><a href="#habit-09" class="habit-link when-habit-link"><span class="when-habit-name">🚶 Two-Minute Reset</span></a> <span class="when-habit-desc">— movement first, meaning when it's ready</span></li>
       </ul>
     </div>
-
+ 
     <div class="when-card soul">
       <div class="when-title">When everything is actually fine and you want to stay in the practice</div>
       <div class="when-subtitle">Not a hard day — just a commitment to keep the relationship warm</div>
       <ul class="when-options">
-        <li><span class="when-habit-name">☀️ Morning Intention</span> <span class="when-habit-desc">— set the tone before the day sets it for you</span></li>
-        <li><span class="when-habit-name">🕯️ Dresser Top Ritual</span> <span class="when-habit-desc">— one breath of gratitude at your anchor space</span></li>
-        <li><span class="when-habit-name">🌸 Two-Way Moment</span> <span class="when-habit-desc">— check in when things are good, not just when they're hard</span></li>
-        <li><span class="when-habit-name">📝 Character Study or Scripting</span> <span class="when-habit-desc">— inhabit the future self on a day when there's room</span></li>
-        <li><span class="when-habit-name">🌟 Impossible Six</span> <span class="when-habit-desc">— believe something wonderful is about to happen, because today it might actually be easy</span></li>
+        <li><a href="#habit-02" class="habit-link when-habit-link"><span class="when-habit-name">☀️ Morning Intention</span></a> <span class="when-habit-desc">— set the tone before the day sets it for you</span></li>
+        <li><a href="#habit-07" class="habit-link when-habit-link"><span class="when-habit-name">🕯️ Dresser Top Ritual</span></a> <span class="when-habit-desc">— one breath of gratitude at your anchor space</span></li>
+        <li><a href="#habit-19" class="habit-link when-habit-link"><span class="when-habit-name">🌸 Two-Way Moment</span></a> <span class="when-habit-desc">— check in when things are good, not just when they're hard</span></li>
+        <li><a href="#habit-12" class="habit-link when-habit-link"><span class="when-habit-name">📝 Character Study or Scripting</span></a> <span class="when-habit-desc">— inhabit the future self on a day when there's room</span></li>
+        <li><a href="#habit-20" class="habit-link when-habit-link"><span class="when-habit-name">🌟 Impossible Six</span></a> <span class="when-habit-desc">— believe something wonderful is about to happen, because today it might actually be easy</span></li>
       </ul>
     </div>
   </div>
@@ -898,10 +932,10 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="section-eyebrow">Appendix</div>
   <h2 class="section-heading">The Character Study Prompt Bank<br><em>Becoming Her</em></h2>
   <p class="section-desc">Use these prompts for Mode B of Habit 12. Choose one that feels alive. Write in third person. Let her surprise you. There are enough prompts here to rotate through for months without repeating.</p>
-
+ 
   <div class="prompt-cat-block">
     <div class="prompt-cat-title">Category 1 — Defining the Character</div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">Who She Is</div>
       <ul class="prompt-list">
@@ -922,7 +956,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <li>What is she still learning about herself? What remains beautifully unfinished?</li>
       </ul>
     </div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">What She's Overcome</div>
       <ul class="prompt-list">
@@ -938,7 +972,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <li>What did she stop waiting for — and what did she do instead?</li>
       </ul>
     </div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">How She Lives</div>
       <ul class="prompt-list">
@@ -955,10 +989,10 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
       </ul>
     </div>
   </div>
-
+ 
   <div class="prompt-cat-block">
     <div class="prompt-cat-title">Category 2 — Hypothetical Scenarios</div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">Navigating Difficulty</div>
       <ul class="prompt-list">
@@ -974,7 +1008,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <li>Someone doubts her — her abilities, her choices, her vision. How does she respond internally and externally?</li>
       </ul>
     </div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">Inhabiting Joy</div>
       <ul class="prompt-list">
@@ -988,7 +1022,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <li>Someone tells her that something she created or said changed something for them. How does she receive that?</li>
       </ul>
     </div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">Relationships &amp; Connection</div>
       <ul class="prompt-list">
@@ -1002,7 +1036,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
         <li>She spends time with someone who radiates the kind of peace and joy she's been cultivating. What do they talk about? What does she learn?</li>
       </ul>
     </div>
-
+ 
     <div class="prompt-subcat">
       <div class="prompt-sub-title">Growth &amp; Vision</div>
       <ul class="prompt-list">
@@ -1019,7 +1053,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
     </div>
   </div>
 </div>
-
+ 
 <!-- CLOSING -->
 <div class="closing">
   <div class="divider">A Final Word</div>
@@ -1029,7 +1063,7 @@ body{background:var(--cream);color:var(--deep);font-family:'Jost',sans-serif;fon
   <div class="closing-anchor">"Stop. This isn't worth my peace."</div>
   <p style="margin-top:16px;font-size:13px;color:var(--soft);font-style:italic;">Always believe that something wonderful is about to happen.</p>
 </div>
-
+ 
 </div><!-- end .content -->
 </body>
 </html>
